@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 font-semibold text-white bg-blue-500 rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+  }
+
+  html {
+    scroll-behavior: smooth;
+}
+.bg-footer {
+    background-color: #162034;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('{{ asset('fonts/Poppins/Poppins-Medium.ttf') }}') format('truetype');
+}
+
+.font-menu {
+    font-family: 'poppins', sans-serif;
+    font-size: 14px;
+}
+
+.text-default {
+    color: #162034;
+}
+
+.text-sub {
+    color: #1D7C82;
+}
+
+.bg-sub {
+    background-color: #1D7C82;
+}
+
+.svg-icon {
+    max-width: 100%; /* Membuat SVG tetap dalam batas lebar */
+    max-height: 100px; /* Sesuaikan ketinggian SVG sesuai kebutuhan */
+    width: auto;
+    height: auto;
+}
+
+.align-text-bottom {
+    margin-top: auto;
+}
+
+.variable-width .carousel-slide {
+padding: 0 10px;
+}
+.carousel-image {
+width: auto;
+height: 250px;
+overflow: hidden;
+}
+.carousel-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+/* Customize prev and next arrows */
+.slick-prev, .slick-next {
+font-size: 1.5rem;
+color: #000000;
+background: none;
+border: none;
+position: absolute;
+top: 42%;
+transform: translateY(-50%);
+cursor: pointer;
+}
+
+.slick-next:focus, .slick-prev:focus {
+    color: #7fb7bb
+}
+
+.slick-next:hover, .slick-prev:hover {
+    color: #1D7C82
+}
+.slick-prev {
+left: -20px;
+}
+.slick-next {
+right: -20px;
+}
+}
+
+
