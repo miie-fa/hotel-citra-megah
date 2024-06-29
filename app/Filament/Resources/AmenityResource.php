@@ -35,7 +35,7 @@ class AmenityResource extends Resource
                         TextInput::make('name')
                         ->unique(),
                         Select::make('icon')
-                            ->label('Bed Type')
+                            ->label('Icon')
                             ->options([
                                 'fa-solid fa-wifi' => 'Wifi',
                                 'fa-solid fa-swimming-pool' => 'Kolam Renang',

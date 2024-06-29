@@ -203,6 +203,7 @@
             @foreach ($sliders as $slider)
             <swiper-slide>
                 <div class="relative">
+                    {{ asset('storage/' . $slider->image) }}
                     <img src="{{ asset('storage/' . $slider->image) }}" alt="Gambar" class="zoom object-cover w-full h-auto filter brightness-50">
                     <div class="relative flex flex-col h-full px-6 md:absolute md:w-2/4 md:top-36 md:left-24 md:right-0 md:bottom-0">
                         <h2 class="mt-3 font-bold text-center text-black md:text-white text-1xl md:text-5xl md:mb-4 md:text-left wow fadeInDown">{{ $slider->title }}</h2>
